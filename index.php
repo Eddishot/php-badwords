@@ -10,9 +10,9 @@ tutte le occorrenze della parola da censurare.
 
 */
     $myText = "Digitare qua la tua parola da censurare";
-    var_dump($myText);
+    // var_dump($myText);
 
-    strlen($myText);
+    // strlen($myText);
 
 
     $censoredWord= $_GET["word"];
@@ -38,17 +38,19 @@ tutte le occorrenze della parola da censurare.
 </head>
 <body>
     <h1>
-     <?php echo $myText ?>
-     <p>
+     <?php echo $myText ?> 
+    </h1>
+     <p>Lunghezza Stringa
         <?php echo strlen($myText) ?> 
      </p>
-    </h1>
+   
     <h1>
         <?php echo $badWord ?>
-        <p>
-        <?php echo strlen($badWord) ?> 
-     </p> 
     </h1>
+    <p>Lunghezza Stringa
+        <?php echo strlen($badWord) ?> 
+    </p> 
+    
 </body>
 </html> 
     
